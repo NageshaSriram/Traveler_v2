@@ -1,0 +1,319 @@
+.menu .app-brand.demo {
+  height: 64px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  /* font-size: 1.4rem; */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #3885e9;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.location-png {
+  color: green;
+    border: 0px;
+    background: #00800026;
+    font-size: 26px;
+}
+.bus-png {
+  color: red;
+  border: 0px;
+  background: #ff00001c;
+  font-size: 26px;
+}
+
+.car-png {
+  color: green;
+  border: 0px;
+  background: #00800026;
+  font-size: 26px;
+}
+
+.train-png {
+    color: #9c27b0;
+    border: 0px;
+    background: #9c27b01c;
+    font-size: 26px;
+}
+
+/* Digital card */
+
+
+.clock-container {
+  width: 405px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 50px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 40px -10px rgb(0 0 0 / 83%);
+  color: white;
+}
+
+.clock-container span {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: right;
+  display: block;
+}
+
+.clock-container p {
+  font-size: 60px;
+  color: var(--light);
+  font-weight: 100;
+}
+
+.clock-container p:first-letter {
+  letter-spacing: 5px;
+}
+
+.container {
+  width: 400px;
+    height: 200px;
+    display: block;
+    background-color: rgb(255 255 255);
+    position: relative;
+    padding: 2px;
+}
+
+.container .top {
+  width: 215px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.container .top p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--purple-dark);
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+.container .bottom {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa4b2;
+}
+
+.container .bottom .progress-bar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: #2196f3;
+  transition: var(--transition);
+}
+
+.colon {
+  --size: 3px;
+  width: var(--size);
+  height: 15px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colon::before {
+  content: '';
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.colon::after {
+  content: '';
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.toast {
+  width: 405px;
+  color: var(--light);
+  padding: 15px 24px;
+  background-color: var(--purple-dark);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+  z-index: 99;
+}
+
+.toast p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.toast p:first-letter {
+  text-transform: uppercase;
+}
+
+.toast.show {
+  bottom: 50px;
+}
+
+.toast span {
+  align-self: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* /Digital card */
+
+.bg-menu-theme .menu-inner>.menu-item.active>.menu-link {
+  color: #2b7de7;
+  background-color: rgb(45 126 231 / 16%) !important;
+}
+.bg-menu-theme .menu-inner>.menu-item.active:before {
+  background: #2b7de7;
+}
+
+.background-logo {
+  background: #2c80e7;
+}
+
+.background-logo:hover {
+  color: #fff;
+  background-color: #4caf50;
+  border-color: #4caf50;
+  transform: translateY(-1px);
+}
+.width-300 {
+  width: 300px;
+}
+.border-bottom-1 {
+  border-bottom: 1px solid #8080802b;
+}
+.position-absolute {
+  position: absolute;
+}
+.width-100-per {
+  width: 100%;
+}
+
+.badge-m-24{
+  margin-left: -24px;
+  position: fixed;
+}
